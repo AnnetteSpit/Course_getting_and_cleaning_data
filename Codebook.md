@@ -58,7 +58,7 @@ The script `run_analysis.R` uses the `dplyr` package for renaming column and rea
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.   
 * Group by subject and activity in order to get their means. 
 * Summarise the data
-* Write out the tidy dataset to `averagedata.txt`.
+* Write out the tidy (aggegrated) dataset to `tidy_dataset.txt`.
 
 # Final Tidy Data Description
 The final tidy data is produced inside the `run_analysis.R`. 
@@ -67,4 +67,4 @@ The final tidy data is produced inside the `run_analysis.R`.
   * The first column refers to each subject that did the experiment. 
   * Column 2~80 are the feature variables(mean and std of the whole feature variables).
   * The last column is refers to the activity (with descriptive labels) that the subjects were doing.
-- `full_data_means` is the tidy data produced after going through all 5 steps of the course project. It contains 180 observations and 81 variables. Where the first column is the subject id, second column is the activity and the rest are the average of each feature variables. 
+- `full_data_means` (can be found as `tidy_dataset.txt` on this github repo) is the tidy data produced after going through all 5 steps of the course project. It contains 180 observations and 81 variables. Where the first column is the subject id, second column is the activity and the rest are the average of each feature variables. 
