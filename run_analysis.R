@@ -22,8 +22,6 @@ subject_train <- read.table("./train/subject_train.txt", col.names = "subject")
 x_train <- read.table("./train/X_train.txt", col.names = features$functions)
 y_train <- read.table("./train/y_train.txt", col.names = "code")
 
-## clean the environment
-
 ## ----- 1. Merge the training and the test sets to create one data set. ----- 
 training_data <- cbind(subject_train, y_train, x_train)
 test_data <- cbind(subject_test, y_test, x_test)
